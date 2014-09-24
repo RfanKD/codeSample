@@ -21,7 +21,6 @@
             
  
                 if (self.nodeAtPoint(location) == myBeltOne.childNodeWithName("colorButtonOff")){
-              //  println("not touching you ")
                 
                     let pressureOff:SKAction = SKAction.rotateByAngle(pressureOffAngle*1.5, duration: 0.09)
                     colorNeedle.runAction(pressureOff)
@@ -122,7 +121,7 @@
     func didBeginContact(contact : SKPhysicsContact){
         
         
-       /* var firstBody : SKPhysicsBody;
+        var firstBody : SKPhysicsBody;
         var secondBody : SKPhysicsBody;
         
         println ("found you")
@@ -140,7 +139,7 @@
             println ("found you")
             //didEnterColorMachine = true;
             
-        }*/
+        }
     }
    
     override func update(currentTime: CFTimeInterval) {
